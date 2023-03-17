@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+    <!-- x-icon -->
+    <link rel="icon" type="x-icon" href="./x-icon.png">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <section class="lg:m-auto lg:w-7/12">
+        <div class="bg-rose-300 lg:mt-10 lg:mb-10 lg:rounded-xl p-8">
+            <h1 class="text-4xl font-bold text-center mb-10 text-rose-800 underline underline-offset-4">Blogs</h1>
+            <ol>
+                <li class="mb-8">
+                    <strong class="text-xl text-rose-800">1. Differences between map, filter, forEach & find :</strong>
+                    <p class="font-medium text-rose-900 mt-3">- For manipulating arrays, JavaScript provides the map,
+                        filter, forEach and find methods. Here are the differences between them :</p>
+                    <ol style="margin-left: 0; list-style:lower-latin;" class="font-medium text-rose-900">
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>map() :</strong>
+                            The map method applies a function to each element of the initial array to produce a new
+                            array. The function receives the current value of the element, its index, and the array
+                            itself as parameters. A new value is returned by the function, and it is added to the new
+                            array.
+                        </li>
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>filter() :</strong>
+                            The original array's elements that don't match a specific condition are excluded using the
+                            filter method. The function receives the current value of the element, its index, and the
+                            array itself as parameters.
+                        </li>
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>forEach() :</strong>
+                            The forEach method applies a function to each array element. The element's current value,
+                            index, and the array itself are passed as parameters to the function. The function doesn't
+                            return anything.
+                        </li>
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>find() :</strong>
+                            The first element of the array that matches a specific condition is returned by the find
+                            method. The function receives the current value of the element, its index, and the array
+                            itself as parameters.
+                        </li>
+                    </ol>
+                </li>
+                <li class="mb-8">
+                    <strong class="text-xl text-rose-800">2. Differences between local storage, session storage and
+                        cookies :</strong>
+                    <p class="font-medium text-rose-900 mt-3">- Local storage, session storage and cookies are all
+                        methods of storing data in a web browser, but each has unique characteristics and applications.
+                        The differences between them are as follows: :</p>
+                    <ol style="margin-left: 0; list-style:lower-latin;" class="font-medium text-rose-900">
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>LocalStorage :</strong>
+                            LocalStorage is a data storing mechanism which stores data on the client's web browser until
+                            the user or an application clears it. Even if the user quits the browser or restarts their
+                            device, the data is still accessible. Since LocalStorage uses a key-value pair storage
+                            system, it stores data as strings.
+                        </li>
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>SessionStorage :</strong>
+                            SessionStorage is similar to LocalStorage but after the user closes the browser or the tab,
+                            or turns off the device, the data is deleted. Along with a key-value pair storing method,
+                            SessionStorage keeps data as strings.
+                        </li>
+                        <li style="margin-left: 1em;" class="mt-2">
+                            <strong>cookies :</strong>
+                            Cookies are small files that are sent to the server with each request and saved on the
+                            client's web browser. Cookies can be used to save user preferences or login information and
+                            have an expiration date. Cookies can only hold a maximum of 4KB of data.
+                        </li>
+                    </ol>
+                </li>
+                <li class="mb-8">
+                    <strong class="text-xl text-rose-800">3. Event Loop :</strong>
+                    <p class="font-medium text-rose-900 mt-3">
+                        - The way that JavaScript manages and runs code is known as an event loop in programming. JavaScript code can only do one thing at a time since it runs in a single-thread. The event loop manages and prioritizes tasks in order to make the code execution as efficient as possible.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        The task queue and call stack are continuously monitored by the event loop. Call stack is the data structure that maintains track of the ongoing function calls. Callback functions and other tasks that must be executed are stored in the task queue.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        whenever a function is called, it is added to the call stack. If the function contains asynchronous code, such as a setTimeout, it is moved to the task queue rather than blocking the call stack. The event loop checks the task queue and adds the next task to the call stack when the call stack is empty. This process is repeated until all tasks are finished. 
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
 </body>
+
 </html>
