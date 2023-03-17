@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="lg:m-auto lg:w-7/12">
+    <section class="lg:m-auto lg:w-9/12">
         <div class="bg-rose-300 lg:mt-10 lg:mb-10 lg:rounded-xl p-8">
             <h1 class="text-4xl font-bold text-center mb-10 text-rose-800 underline underline-offset-4">Blogs</h1>
             <ol>
@@ -87,6 +87,39 @@
                     </p>
                     <p class="font-medium text-rose-900 mt-3">
                         whenever a function is called, it is added to the call stack. If the function contains asynchronous code, such as a setTimeout, it is moved to the task queue rather than blocking the call stack. The event loop checks the task queue and adds the next task to the call stack when the call stack is empty. This process is repeated until all tasks are finished. 
+                    </p>
+                </li>
+                <li class="mb-8">
+                    <strong class="text-xl text-rose-800">4. Explain <strong>function quizTimer()</strong> :</strong>
+                    <p class="font-medium text-rose-900 mt-3">
+                        - QuizTimer is a function that accepts a single parameter, dismiss, which is a boolean value. This function allows you to create a countdown timer for a quiz.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        The function clears the interval and stops the timer if dismiss's value is true. The function initializes and starts the timer if the dismiss value is false or not provided.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        The function updates the HTML of an element with the id "count" inside the timer interval. The remaining time in the quiz or test is displayed in the updated HTML in the format "mm:ss". The count variable maintains track of the remaining time in seconds, which is incremented by 1 every second.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        If the remaining time is longer than 60 seconds, the color of the text in the HTML element with the id "count" is changed every second between red-300 and red-700 classes by the quizTimer function.
+                    </p>
+                </li>
+                <li class="mb-8">
+                    <strong class="text-xl text-rose-800">4. Explain <strong>function chooseQuiz()</strong> :</strong>
+                    <p class="font-medium text-rose-900 mt-3">
+                        - chooseQuiz is a function that accepts two parameters: givenAns and index.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        The purpose of this function is to choose a quiz question from an array of quiz data and record the given answer for that question in a separate array of answers. The index parameter specifies the index of the quiz question that is being answered, while givenAns represents the answer that the user selected for that question.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        The function starts by checking if the current quiz question is already present in the answers array. It does so by using the find method to search for an object in answers that has the same id as the current quiz question. If such an object exists, it means that the user has already answered this question before, and the function needs to update the answer for that question.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        If the question already exists in the answers array, the function loops through the answers array and finds the object that matches the current quiz question. Once it finds the matching object, the function replaces that object with a new object that has the updated answer. It does so by using the splice method to remove the old object and insert a new one at the same position.
+                    </p>
+                    <p class="font-medium text-rose-900 mt-3">
+                        After updating the answers array, the function calls a displayAnswers function to display the updated list of answers on the UI.
                     </p>
                 </li>
             </ol>
